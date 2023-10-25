@@ -9,11 +9,11 @@ export default class ShadowElement extends HTMLElement {
     this.injectStyles(styles)
   }
 
-  setShadow() {
+  setShadow = () => {
     this.attachShadow({ mode: 'open' })
   }
 
-  injectStyles(styles) {
+  injectStyles = (styles) => {
     if (!styles) return
 
     const style = document.createElement('style')
